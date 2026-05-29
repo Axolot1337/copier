@@ -22,17 +22,6 @@ A lightweight and secure file copying utility written in C. Perfect for CTF chal
 
 ---
 
-## 🚀 Features
-
-- **Lightweight**: Minimal dependencies, pure C implementation
-- **Secure**: Built-in stack protection and memory safety checks
-- **Fast**: Optimized compilation with `-O2` flag
-- **Error Handling**: Comprehensive error messages using `strerror()`
-- **CTF-Ready**: Works in restricted environments
-- **Portable**: Runs on any POSIX-compliant system
-
----
-
 ## 💻 Compilation
 
 ### Using GNU Make (Recommended):
@@ -44,7 +33,7 @@ This will compile with all security hardening flags enabled.
 
 ### Manual Compilation:
 ```bash
-gcc copier.c -o copier -fstack-protector-all -Wl,-z,relro,-z,now -D_FORTIFY_SOURCE=2 -O2 -s -Wno-unused-result
+gcc copier.c -o copier -fstack-protector-all -Wl,-z,relro,-z,now -z noexecstack -D_FORTIFY_SOURCE=2 -O2 -s -Wno-unused-result
 ```
 
 ### Clean Up:
