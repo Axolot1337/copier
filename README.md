@@ -106,6 +106,4 @@ make
 ./copier
 ```
 
----
-
 **Made for CTF enthusiasts. Happy hacking!** 🔓🎯
