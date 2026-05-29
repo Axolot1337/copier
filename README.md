@@ -82,11 +82,8 @@ File successfully copied from '/tmp/flag.txt' to '/home/user/flag.txt'
 
 ---
 
-## 🎓 Educational Use
+## 🎓 Common CTF Scenarios
 
-This tool is provided for **educational purposes** and **authorized CTF competitions** only. Always ensure you have proper authorization before copying files in any environment.
-
-### Common CTF Scenarios:
 - 🔓 Privilege escalation challenges
 - 🔒 Restricted shell environments
 - ⛓️ Chroot jails
