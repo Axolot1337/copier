@@ -36,11 +36,6 @@ This will compile with all security hardening flags enabled.
 gcc copier.c -o copier -fstack-protector-all -Wl,-z,relro,-z,now -z noexecstack -D_FORTIFY_SOURCE=2 -O2 -s -Wno-unused-result
 ```
 
-### Clean Up:
-```bash
-make clean
-```
-
 ---
 
 ## 📖 Usage
