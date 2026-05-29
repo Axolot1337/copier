@@ -104,8 +104,7 @@ make
 
 # Run
 ./copier
-
-
+```
 
 ---
 
