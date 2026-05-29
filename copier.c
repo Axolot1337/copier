@@ -11,7 +11,7 @@ int main(void)
     FILE *source_ptr;
     FILE *destination_ptr;
 
-    printf("Enter the directory where the file will be copied: ");
+    printf("Enter the source file path: ");
     fgets(source, sizeof(source), stdin);
     source[strcspn(source, "\n")] = 0;
 
@@ -21,7 +21,7 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    printf("Enter the directory where the file will be pasted: ");
+    printf("Enter the destination file path (including file name): ");
     fgets(destination, sizeof(destination), stdin);
     destination[strcspn(destination, "\n")] = 0;
 
