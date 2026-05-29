@@ -3,7 +3,6 @@ CFLAGS = -fstack-protector-all -Wl,-z,relro,-z,now -z noexecstack -D_FORTIFY_SOU
 TARGET = copier
 SRC = copier.c
 
-# Terminal renk kodları (Çıktıyı güzelleştirmek için)
 YELLOW = \033[1;33m
 GREEN = \033[1;32m
 RESET = \033[0m
@@ -15,8 +14,4 @@ $(TARGET): $(SRC)
 	@$(CC) $(SRC) -o $(TARGET) $(CFLAGS)
 	@echo "$(GREEN)[✓] $(SRC) was successfully compiled and saved as $(TARGET)$(RESET)"
 
-clean:
-	@rm -f $(TARGET)
-	@echo "$(YELLOW)[-] Cleaned up binary files.$(RESET)"
-
-.PHONY: all clean
+.PHONY: all
