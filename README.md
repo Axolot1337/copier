@@ -105,10 +105,6 @@ make
 # Run
 ./copier
 
-# Clean up
-make clean
-```
-
 ---
 
 **Made for CTF enthusiasts. Happy hacking!** 🔓🎯
