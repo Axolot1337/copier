@@ -33,21 +33,6 @@ A lightweight and secure file copying utility written in C. Perfect for CTF chal
 
 ---
 
-## 🔐 Security Features
-
-The binary is compiled with multiple security hardening options:
-
-| Feature | Flag | Purpose |
-|---------|------|---------|
-| Stack Protector | `-fstack-protector-all` | Prevents stack buffer overflow exploits |
-| RELRO | `-Wl,-z,relro` | Read-only relocation table |
-| NOW | `-Wl,-z,now` | Resolve all symbols at startup |
-| Fortify Source | `-D_FORTIFY_SOURCE=2` | Runtime buffer overflow detection |
-| Optimization | `-O2` | Performance optimization |
-| Strip | `-s` | Remove debugging symbols |
-
----
-
 ## 💻 Compilation
 
 ### Using GNU Make (Recommended):
