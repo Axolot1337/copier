@@ -42,6 +42,8 @@ Then follow the interactive prompts:
 2. **Enter destination file path** - Where to save the copy
 3. **Success message** - Confirmation of successful copy
 
+---
+
 ### CTF Usage Example:
 
 ```bash
