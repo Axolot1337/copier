@@ -27,8 +27,13 @@ int main(void)
 
     destination_ptr = fopen(destination, "w");
     if (destination_ptr == NULL) {
-        printf("Error: %s\n", strerror(errno));
-        fclose(source_ptr);
+        if (errno == EISDIR) {
+            printf("Error: You entered directory. Please enter a path.\n");
+        }
+        else if (errno == EACCES) {
+            printf("Error: You do not have permission to write to this directory.\n");
+        }
+            fclose(source_ptr);
         source_ptr = NULL;
         exit(EXIT_FAILURE);
     }
