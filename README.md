@@ -42,18 +42,6 @@ Then follow the interactive prompts:
 2. **Enter destination file path** - Where to save the copy
 3. **Success message** - Confirmation of successful copy
 
-### Example Usage:
-
-```bash
-$ ./copier
-Enter the source file path: /etc/passwd
-Enter the destination file path (including file name): /home/user/output.txt
-File successfully copied from '/etc/passwd' to '/home/user/output.txt'
-
-$ cat output.txt
-# File contents displayed
-```
-
 ### CTF Usage Example:
 
 ```bash
