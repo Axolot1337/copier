@@ -31,7 +31,7 @@ int main(void)
             printf("Error: You entered directory. Please enter a path.\n");
         }
         else if (errno == EACCES) {
-            printf("Error: You do not have permission to write to this directory.\n");
+            printf("Error: You don't have permission to write this directory.\n");
         }
             fclose(source_ptr);
         source_ptr = NULL;
