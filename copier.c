@@ -27,7 +27,7 @@ int main(void)
 
     destination_ptr = fopen(destination, "w");
     if (destination_ptr == NULL) {
-        fprintf(stderr, "An error occurs during the pasting step. Make sure you enter the target directory path with the file name.\n");
+        printf("Error: %s\n", strerror(errno));
         fclose(source_ptr);
         source_ptr = NULL;
         exit(EXIT_FAILURE);
