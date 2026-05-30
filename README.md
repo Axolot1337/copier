@@ -46,7 +46,7 @@ Then follow the interactive prompts:
 
 ```bash
 $ ./copier
-Enter the directory where the file will be copied: /etc/passwd
+Enter the source file path: /etc/passwd
 Enter the directory where the file will be pasted: output.txt
 File successfully copied from '/etc/passwd' to 'output.txt'
 
@@ -63,7 +63,7 @@ $ which cp
 
 # Use copier instead
 $ ./copier
-Enter the directory where the file will be copied: /tmp/flag.txt
+Enter the source file path: /tmp/flag.txt
 Enter the directory where the file will be pasted: /home/user/flag.txt
 File successfully copied from '/tmp/flag.txt' to '/home/user/flag.txt'
 ```
