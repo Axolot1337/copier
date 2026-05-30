@@ -33,7 +33,10 @@ int main(void)
         else if (errno == EACCES) {
             printf("Error: You don't have permission to write this directory.\n");
         }
-            fclose(source_ptr);
+        else {
+            printf("Error: %s (Code: %d)\n", strerror(errno), errno);
+        }
+        fclose(source_ptr);
         source_ptr = NULL;
         exit(EXIT_FAILURE);
     }
