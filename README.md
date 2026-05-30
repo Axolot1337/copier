@@ -17,7 +17,6 @@ A lightweight and secure file copying utility written in C. Perfect for CTF chal
 - ✅ Works when `cp` is disabled
 - ✅ No external dependencies
 - ✅ Lightweight binary
-- ✅ Security hardening built-in
 - ✅ Perfect for privilege escalation challenges
 
 ---
