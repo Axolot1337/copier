@@ -34,7 +34,7 @@ int main(void)
             printf("Error: You don't have permission to write this directory.\n");
         }
         else {
-            printf("Error: %s (Code: %d)\n", strerror(errno), errno);
+            printf("Error: %s\n", strerror(errno));
         }
         fclose(source_ptr);
         source_ptr = NULL;
