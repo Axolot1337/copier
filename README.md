@@ -47,8 +47,8 @@ Then follow the interactive prompts:
 ```bash
 $ ./copier
 Enter the source file path: /etc/passwd
-Enter the destination file path (including file name): output.txt
-File successfully copied from '/etc/passwd' to 'output.txt'
+Enter the destination file path (including file name): /home/user/output.txt
+File successfully copied from '/etc/passwd' to '/home/user/output.txt'
 
 $ cat output.txt
 # File contents displayed
