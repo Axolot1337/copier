@@ -5,7 +5,7 @@
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=flat-square)
 ![CTF Ready](https://img.shields.io/badge/CTF-Ready-red?style=flat-square)
 
-A lightweight and secure file copying utility written in C. Perfect for CTF challenges where the `cp` command is restricted or unavailable.
+A lightweight file copying utility written in C. Perfect for CTF challenges where the `cp` command is restricted or unavailable.
 
 ---
 
