@@ -17,7 +17,7 @@ int main(void)
 
     source_ptr = fopen(source, "r");
     if (source_ptr == NULL) {
-        printf("Error: %s\n", strerror(errno));
+        fprintf(stderr, "Error: %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }
 
@@ -28,13 +28,13 @@ int main(void)
     destination_ptr = fopen(destination, "w");
     if (destination_ptr == NULL) {
         if (errno == EISDIR) {
-            printf("Error: You entered directory. Please enter a path.\n");
+            fprintf(stderr, "Error: You entered directory. Please enter a path.\n");
         }
         else if (errno == EACCES) {
-            printf("Error: You don't have permission to write this directory.\n");
+            fprintf(stderr, "Error: You don't have permission to write this directory.\n");
         }
         else {
-            printf("Error: %s\n", strerror(errno));
+            fprintf(stderr, "Error: %s\n", strerror(errno));
         }
         fclose(source_ptr);
         source_ptr = NULL;
