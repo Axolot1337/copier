@@ -52,9 +52,9 @@ $ which cp
 
 # Use copier instead
 $ ./copier
-Enter the source file path: /tmp/flag.txt
-Enter the destination file path (including file name): /home/user/flag.txt
-File successfully copied from '/tmp/flag.txt' to '/home/user/flag.txt'
+Enter the source file path: /home/user/flag.txt
+Enter the destination file path (including file name): /tmp/flag.txt
+File successfully copied from '/home/user/flag.txt' to '/tmp/flag.txt'
 ```
 
 ---
